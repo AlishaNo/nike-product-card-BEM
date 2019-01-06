@@ -1,0 +1,94 @@
+body {
+    min-height: 100vh;
+    font-family: MuseoSansW01-Rounded100, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    color: #e1e1e1;
+    background-image: url("../images/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+.b-product-container {
+    max-width: 840px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.b-product {
+    padding: 0 20px;
+    background-color: #111a28;
+    border-radius: 15px;
+    width: 82%;
+    margin: 10% auto;
+    box-shadow: 0 0 32px 8px rgba(0,0,0,0.55);
+    overflow: hidden;
+}
+.b-product__logo {
+    padding: 25px 5px 0 3px;
+}
+.b-product-slider {
+    margin: 65px auto 55px 20px;
+    width: 65%;
+    position: relative;
+}
+.b-product-slider::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.b-product-slider__item {
+    float: left;
+}
+.b-product-slider__bullets {
+    width: 70px;
+    height: 16px;
+    position: absolute;
+    top: 100%;
+    left: 28%;
+}
+.b-product-info {
+    float: right;
+    width: 34.5%;
+}
+.b-product-info__title {
+    font-weight: 100;
+    font-size: 24px;
+    margin: 15px 0 0 0;
+}
+.b-product-info__subtitle {
+    margin: 12px 0;
+}
+.b-product-info__stars {
+     margin: 20px 0;
+}
+.b-product-info__select {
+    -webkit-appearance: button;
+    -webkit-border-radius: 0;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url("../images/Rectangle.png"), -webkit-linear-gradient(#111a28, #111a28 40%, #111a28);
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    border: 1px solid #4f5560;
+    color: #555;
+    font-size: inherit;
+    margin: 8px 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    width: 70px;
+    height: 31px;
+    outline: none;
+}
+.b-product-info__select_big {
+    width: 185px;
+    background: #202835;
+    height: 41px;
+    margin: 20px 0;
+}
