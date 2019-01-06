@@ -2,50 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="//db.onlinewebfonts.com/c/155263ca437b4d97451a5adbddf19f82?family=MuseoSansW01-Rounded100" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/155263ca437b4d97451a5adbddf19f82?family=MuseoSansW01-Rounded100"
+        rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
-  <title>Nike-product-card</title>
+  <title>Nike-product-cart</title>
 </head>
-<body>
+<body class="b-page">
 <main class="b-product-container">
-<div class="b-product">
-  <div class="b-product__logo">
-    <img src="images/logo.png" alt="Nike logo">
-    <!--Надо контенту внутри элемента так же присваивать класс по БЭМ или он может оставаться сез него?-->
-  </div>
-  <div class="b-product-info">
-  <h1 class="b-product-info__title">Nike SB Stefan<br>Janoski Max</h1>
-  <div class="b-product-info__subtitle">Unisex Skateboarding Shoe</div>
-  <div class="b-product-info__rating">
-    <div class="b-product-info__stars">
-      <img src="images/stars.png" alt="Stars">
+  <div class="b-product">
+    <div class="b-product__logo">
+      <img class="b-product__img" src="images/logo.png" alt="Nike logo">
+      <!--Надо контенту(img) внутри элемента(div) так же присваивать класс по БЭМ или он может оставаться сез него?
+      Если обязательно присваивать класс, то название использовать то же, что и для элемента или это зависит от ситуации? -->
+    </div>
+    <div class="b-product-info">
+      <h1 class="b-product-info__title">Nike SB Stefan<br>Janoski Max</h1>
+      <div class="b-product-info__subtitle">Unisex Skateboarding Shoe</div>
+      <div class="b-product-info__rating">
+        <div class="b-product-info__stars">
+          <img class="b-product-info__img" src="images/stars.png" alt="Stars">
+        </div>
+      </div>
+      <form class="b-product-info__options" action="#" method="post">
+        <label><select class="b-product-info__select" name="Size">
+          <option disabled selected>Size</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <!--В option тоже надо добавить класс? Или если нет необходимости задавать стили для option, то можно их оставить без класса?
+          И без label никак не обойтись, даже если он нам не нужен на странице?-->
+        </select></label>
+        <label><select class="b-product-info__select" name="Qty">
+          <option disabled selected>Qty</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select></label><br>
+        <input class="b-product-info__select b-product-info__select_big" type="submit" value="Add to cart">
+      </form>
+    </div>
+    <div class="b-product-slider">
+      <div class="b-product-slider__item">
+        <img class="b-product-slider__item1" src="images/Nike-SB-Stefan-Janoski-Max.png"
+             alt="Nike SB Stefan Janoski Max">
+      </div>
+      <div class="b-product-slider__bullets">
+        <img class="b-product-slider__bullets" src="images/bullets.png" alt="bullets">
+      </div>
     </div>
   </div>
-  <form class="b-product-info__options" action="#" method="post">
-    <label><select class="b-product-info__select" name="Size">
-      <option disabled selected>Size</option>
-      <option value="38">38</option>
-      <option value="39">39</option>
-      <option value="40">40</option>
-    </select></label>
-    <label><select class="b-product-info__select" name="Qty">
-      <option disabled selected>Qty</option>
-      <option value="1"></option>
-      <option value="2"></option>
-      <option value="3"></option>
-    </select></label><br>
-    <input class="b-product-info__select b-product-info__select_big" type="submit" value="Add to cart">
-  </form>
-</div>
-  <div class="b-product-slider">
-    <div class="b-product-slider__item">
-      <img class="b-product-slider__item1" src="images/Nike-SB-Stefan-Janoski-Max.png" alt="Nike SB Stefan Janoski Max">
-    </div>
-    <div class="b-product-slider__bullets">
-      <img class="b-product-slider__bullets" src="images/bullets.png" alt="bullets">
-    </div>
-  </div>
-</div>
 </main>
 </body>
 </html>
